@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.container{
+    max-width: 1200px;    
+    margin: 0 auto;
+}
+
+.header{
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    min-height: 750px;
+}
+
+
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-weight: 800;
+    font-size: 25px;
+    color: rgb(239, 233, 233);
+}
+
+.menu .barranavegador ul li{
+    position: relative;
+    float: left;
+}   
+
+.menu .barranavegador ul li a{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+    color: rgb(239, 233, 233);
+    display: block;
+}
+
+#menu{
+    display: none;
+    
+}
+
+.menu-icono{
+    width: 30px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.menu .barranavegador ul li a:hover{
+    color: rgb(157, 104, 104);
+}
+
+.header-contenido{
+    text-align: center;
+}
+
+.header-contenido h1{
+    font-size: 75px;
+    line-height: 80px;
+    color: rgb(239, 233, 233);
+    margin-bottom: 35px;
+}
+
+.header-contenido p{
+    font-size: 16px;
+    color: #C5C5C5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.cuerpo{
+    padding-top: 70px;
+}
+
+.cuerpo-1{
+    display: flex;
+}
+
+.cuerpo-info{
+        color: black;
+        padding: 15px;
+        text-align: center;
+        margin: 0 10px;
+        border-radius: 25px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        transition: all 0.3 ease;
+}
+
+.cuerpo-info:hover{
+    transform: translateY(-20px);
+}
+
+.image-dest{
+    width: 330px;
+    height: 220px;
+    border-radius: 15px;
+}
+
+.cuerpo-info h3{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.cuerpo-info p{
+    font-size: 20px;
+    color: #4d4b4b;
+}
+
+.cuerpo-2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2{
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.cuerpo-2 p{
+    font-size: 16px;
+    color: #4d4b4b;
+    padding: 0 250px;
+    margin-bottom: 40px;
+}
+
+.btn-1{
+    margin-bottom: 60px;
+    display: inline-block;
+    padding: 13px 25px;
+    color: black;
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 15px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+}
+
+.btn-1:hover{
+    background-color: rgb(157, 104, 104);
+    color: #FFFFFF;
+}
+
+.cont-carrusel {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carrusel {
+    display: flex;
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+.carrusel ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel li {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carrusel img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.footer{
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-texto{
+    padding: 0 60px;
+}
+
+.footer-texto p{
+    font-size: 15px;
+    color: rgb(239, 233, 233);
+    margin-top: 25px;
+}
+
+.footer-redes{
+    display: flex;
+}
+.footer-redes img{
+    margin: 0 15px;
+}
+
+@media(max-width:991px){
+    
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .barranavegador{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background-color: #323337;
+        display: none;
+    }
+    .menu .barranavegador ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .barranavegador{
+        display: initial;
+    }
+
+    .header{
+        min-height: 100vh;
+
+    }
+    .header-contenido {
+        padding: 100px 30px;
+    }
+    .header-contenido p{
+        padding: 0;
+    }
+
+    .cuerpo{
+        padding: 30px;
+    }
+    .cuerpo-1{
+        width: 100%;
+        flex-direction: column;
+        order: 2;
+    }
+    .cuerpo-2{
+        width: 100%;
+        margin: 0 0 40px 0;
+        text-align: center;
+    }
+    .cuerpo-info{
+        margin: 0 0 25px 0;
+    }
+    .cuerpo-2 p{
+        padding: 0;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-texto{
+        padding-right: 0;
+    }
+    .footer-redes{
+        margin-top: 50px;
+    }
+}
